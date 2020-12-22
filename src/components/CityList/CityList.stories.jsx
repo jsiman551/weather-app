@@ -1,5 +1,6 @@
 import React from 'react';
 import CityList from '.';
+import { action } from '@storybook/addon-actions'
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -26,4 +27,4 @@ const Cities = [
     }
 ]
 
-export const CityExample = () => <CityList cities={Cities} />;
+export const CityExample = () => <CityList cities={Cities} onClickCity={action("hola mundo")} />;
